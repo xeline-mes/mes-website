@@ -1,3 +1,30 @@
+### eclipse
+.settings/
+target/
+.classpath
+.project
+
+### idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+### dist
+src/main/resources/static/dist/
+
+### gradle
 /.gradle
 /build
+
+### maven
+target/
+
+### node
+etc/
+node/
+node_modules/
+npm-debug.log
+coverage
+
 
