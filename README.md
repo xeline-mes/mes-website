@@ -46,3 +46,11 @@ Preferences -> JavaScript -> Code Style -> Formatter -> Import -> [rule-files\fo
 ├ npm.cmd                  # local npm windows wrapper
 └ README.md                # this file
 ```
+
+
+gradle compileJava
+
+mvn clean
+
+
+
