@@ -1,5 +1,10 @@
 # ReadMe
 
+## Build & Run
+
+mvn clean package
+mvn tomcat7:run
+
 ## Test
 
 http://localhost:8080/xeline-website/login<br>

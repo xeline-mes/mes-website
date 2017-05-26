@@ -200,7 +200,9 @@
   </dependencies>
   
   <build>
+
     <plugins>
+
       <plugin>
       	<groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
@@ -283,6 +285,22 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <hostName>localhost</hostName>
+          <port>8080</port>
+          <path>/mes-website</path>
+          <uriEncoding>UTF-8</uriEncoding>
+        </configuration>
+      </plugin>
+
     </plugins>
+
   </build>
+
 </project>
+
