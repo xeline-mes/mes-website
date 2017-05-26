@@ -2,8 +2,10 @@
 
 ## Build & Run
 
+```
 mvn clean package
 mvn tomcat7:run
+```
 
 ## Test
 
