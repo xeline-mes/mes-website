@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.socket.TextMessage;
 
-import com.xeline.socket.SocketHandler;
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
 
 /**
  * @desp Socket控制器
@@ -22,10 +24,7 @@ import com.xeline.socket.SocketHandler;
 public class SocketController{
     
     private static final Logger logger = LoggerFactory.getLogger(SocketController.class);
-    
-    @Autowired
-    private SocketHandler socketHandler;
-    
+
     @RequestMapping(value="/login")
     public String login(HttpSession session){
         logger.info("create new connection by user");
@@ -36,9 +35,11 @@ public class SocketController{
     }
 
     @RequestMapping(value = "/message", method = RequestMethod.GET)
-    public String sendMessage(){
+    public String sendMessage() throws UnirestException{
         
-        socketHandler.sendMessageToUser("xenron", new TextMessage("receive new message"));
+    	HttpResponse<String> httpResponse = Unirest.get("http://localhost:18080/mes-web-service/customers/").asString();
+        String json = httpResponse.getBody();
+        System.out.println(json);
         
         return "message";
     }
