@@ -37,7 +37,7 @@ public class SocketController{
     @RequestMapping(value = "/message", method = RequestMethod.GET)
     public String sendMessage() throws UnirestException{
         
-    	HttpResponse<String> httpResponse = Unirest.get("http://localhost:18080/mes-web-service/customers/").asString();
+        HttpResponse<String> httpResponse = Unirest.get("http://localhost:18080/mes-web-service/customers/").asString();
         String json = httpResponse.getBody();
         System.out.println(json);
         
