@@ -9,12 +9,12 @@
   <version>1.0.0-BUILD-SNAPSHOT</version>
 
   <properties>
-  
+
     <project.java.version>1.8</project.java.version>
+    <java-version>1.8</java-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    
-    <java-version>1.8</java-version>
+
     <org.aspectj-version>1.6.10</org.aspectj-version>
     <org.slf4j-version>1.6.6</org.slf4j-version>
     <!-- Spring -->
@@ -24,7 +24,9 @@
     <!-- Jackson -->
     <jackson.version>2.8.8</jackson.version>
     <log4j.version>1.2.15</log4j.version>
+
   </properties>
+
   <dependencies>
 
     <!-- xeline -->
@@ -92,19 +94,18 @@
       <artifactId>spring-test</artifactId>
       <version>${spring-framework.version}</version>
     </dependency>
-    
     <!-- Spring WebSocket -->
-    <dependency>  
-      <groupId>org.springframework</groupId>  
-      <artifactId>spring-websocket</artifactId>  
-      <version>${spring-framework.version}</version>  
-    </dependency>  
-    <dependency>  
-      <groupId>org.springframework</groupId>  
-      <artifactId>spring-messaging</artifactId>  
-      <version>${spring-framework.version}</version>  
-    </dependency>  
-    
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-websocket</artifactId>
+      <version>${spring-framework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-messaging</artifactId>
+      <version>${spring-framework.version}</version>
+    </dependency>
+
     <!-- jackson -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -121,14 +122,14 @@
       <artifactId>jackson-annotations</artifactId>
       <version>${jackson.version}</version>
     </dependency>
-        
+
     <!-- AspectJ -->
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjrt</artifactId>
       <version>${org.aspectj-version}</version>
-    </dependency>  
-    
+    </dependency>
+
     <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -178,7 +179,7 @@
       <artifactId>javax.inject</artifactId>
       <version>1</version>
     </dependency>
-        
+
     <!-- Servlet -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -197,24 +198,23 @@
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-  
+
     <!-- Test -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>   
+    </dependency>
 
     <dependency>
-    <groupId>com.mashape.unirest</groupId>
-    <artifactId>unirest-java</artifactId>
-    <version>1.4.9</version>
-</dependency>
+      <groupId>com.mashape.unirest</groupId>
+      <artifactId>unirest-java</artifactId>
+      <version>1.4.9</version>
+    </dependency>
 
-    
   </dependencies>
-  
+
   <build>
 
     <plugins>
@@ -252,14 +252,14 @@
           <classpathContainers>
             <classpathContainer>org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER</classpathContainer>
           </classpathContainers>
-          <projectnatures> 
+          <projectnatures>
             <java.lang.String>org.springframework.ide.eclipse.core.springnature</java.lang.String>
             <java.lang.String>org.eclipse.jem.workbench.JavaEMFNature</java.lang.String>
             <java.lang.String>org.eclipse.wst.common.modulecore.ModuleCoreNature</java.lang.String>
             <java.lang.String>org.eclipse.jdt.core.javanature</java.lang.String>
-            <java.lang.String>org.eclipse.m2e.core.maven2Nature</java.lang.String> 
-            <java.lang.String>org.eclipse.wst.common.project.facet.core.nature</java.lang.String> 
-            <java.lang.String>org.eclipse.wst.jsdt.core.jsNature</java.lang.String> 
+            <java.lang.String>org.eclipse.m2e.core.maven2Nature</java.lang.String>
+            <java.lang.String>org.eclipse.wst.common.project.facet.core.nature</java.lang.String>
+            <java.lang.String>org.eclipse.wst.jsdt.core.jsNature</java.lang.String>
           </projectnatures>
           <outputDirectory>target/classes</outputDirectory>
         </configuration>
@@ -308,8 +308,8 @@
         <version>2.1</version>
         <configuration>
           <hostName>localhost</hostName>
-          <port>8080</port>
-          <path>/mes-website</path>
+          <port>18080</port>
+          <path>/xeline-website</path>
           <uriEncoding>UTF-8</uriEncoding>
         </configuration>
       </plugin>
