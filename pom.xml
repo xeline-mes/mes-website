@@ -9,7 +9,7 @@
 
   <parent>
     <groupId>com.xeline</groupId>
-    <artifactId>xeline-bom</artifactId>
+    <artifactId>xeline-bom-war</artifactId>
     <version>1.0.0-BUILD-SNAPSHOT</version>
   </parent>
 
