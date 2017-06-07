@@ -25,106 +25,11 @@
       <version>1.0.0-BUILD-SNAPSHOT</version>
     </dependency>
 
-    <!-- Spring WebSocket -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-websocket</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-
-    <!-- Servlet -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>tomcat-servlet-api</artifactId>
-      <version>8.5.15</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet.jsp.jstl</groupId>
-      <artifactId>jstl-api</artifactId>
-      <version>1.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.servlet</groupId>
-          <artifactId>servlet-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.glassfish.web</groupId>
-      <artifactId>jstl-impl</artifactId>
-      <version>1.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.servlet</groupId>
-          <artifactId>servlet-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-
-    <dependency>
-      <groupId>com.mashape.unirest</groupId>
-      <artifactId>unirest-java</artifactId>
-      <version>1.4.9</version>
-    </dependency>
-
   </dependencies>
 
   <build>
 
     <plugins>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-eclipse-plugin</artifactId>
-        <version>2.9</version>
-        <configuration>
-          <additionalConfig>
-            <file>
-              <name>.settings/org.eclipse.core.resources.prefs</name>
-              <content>
-                <![CDATA[eclipse.preferences.version=1${line.separator}encoding/<project>=${project.build.sourceEncoding}${line.separator}]]>
-              </content>
-            </file>
-          </additionalConfig>
-          <additionalProjectnatures>
-            <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-          </additionalProjectnatures>
-          <additionalBuildcommands>
-            <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
-          </additionalBuildcommands>
-          <downloadSources>true</downloadSources>
-          <downloadJavadocs>true</downloadJavadocs>
-          <wtpversion>2.0</wtpversion>
-          <wtpContextName>${artifactId}</wtpContextName>
-          <additionalProjectFacets>
-            <jst.web>3.1</jst.web>
-            <wst.jsdt.web>1.0</wst.jsdt.web>
-            <java>1.8</java>
-            <jst.jsf>2.2</jst.jsf>
-            <jst.jaxrs>2.0</jst.jaxrs>
-          </additionalProjectFacets>
-          <classpathContainers>
-            <classpathContainer>org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER</classpathContainer>
-          </classpathContainers>
-          <projectnatures>
-            <java.lang.String>org.springframework.ide.eclipse.core.springnature</java.lang.String>
-            <java.lang.String>org.eclipse.jem.workbench.JavaEMFNature</java.lang.String>
-            <java.lang.String>org.eclipse.wst.common.modulecore.ModuleCoreNature</java.lang.String>
-            <java.lang.String>org.eclipse.jdt.core.javanature</java.lang.String>
-            <java.lang.String>org.eclipse.m2e.core.maven2Nature</java.lang.String>
-            <java.lang.String>org.eclipse.wst.common.project.facet.core.nature</java.lang.String>
-            <java.lang.String>org.eclipse.wst.jsdt.core.jsNature</java.lang.String>
-          </projectnatures>
-          <outputDirectory>target/classes</outputDirectory>
-        </configuration>
-      </plugin>
 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
