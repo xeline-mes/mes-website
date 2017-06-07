@@ -9,22 +9,6 @@
   <version>1.0.0-BUILD-SNAPSHOT</version>
 
   <properties>
-
-    <project.java.version>1.8</project.java.version>
-    <java-version>1.8</java-version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-    <org.aspectj-version>1.8.1</org.aspectj-version>
-    <org.slf4j-version>1.6.6</org.slf4j-version>
-    <!-- Spring -->
-    <spring-framework.version>4.3.7.RELEASE</spring-framework.version>
-    <!-- Junit -->
-    <junit.version>4.12</junit.version>
-    <!-- Jackson -->
-    <jackson.version>2.8.8</jackson.version>
-    <log4j.version>1.2.15</log4j.version>
-
   </properties>
 
   <dependencies>
@@ -36,64 +20,6 @@
       <version>1.0.0-BUILD-SNAPSHOT</version>
     </dependency>
 
-    <!-- Spring -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>${spring-framework.version}</version>
-      <exclusions>
-        <!-- Exclude Commons Logging in favor of SLF4j -->
-        <exclusion>
-          <groupId>commons-logging</groupId>
-          <artifactId>commons-logging</artifactId>
-         </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-tx</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-aop</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-aspects</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-orm</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-expression</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>${spring-framework.version}</version>
-    </dependency>
     <!-- Spring WebSocket -->
     <dependency>
       <groupId>org.springframework</groupId>
